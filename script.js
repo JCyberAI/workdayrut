@@ -1,4 +1,4 @@
-var timer = setInterval(checkTime, 1000)
+/*var timer = setInterval(checkTime, 1000)
 
 function checkTime(){
     let dateTime = new Date()
@@ -11,4 +11,4 @@ function checkTime(){
     if (oldHour < hourNow){
         formatField(hourNow)
     }
-}
+}*/
