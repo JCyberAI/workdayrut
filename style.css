@@ -25,7 +25,8 @@ textarea,
 }
 
 .textspace {
-  
+  padding: 2px;
+  flex-direction: row;
 }
 
 .jumbotron {
