@@ -10,5 +10,11 @@ function checkTime(){
     hourNow = hourNow - offSet 
     if (oldHour < hourNow){
         formatField(hourNow)
-    }
+}
+$(document).ready(function() {
+  $('#name').keyup(function() {
+    $(this).attr('size', $(this).val().length)
+  });
+});
+
 }*/
