@@ -16,5 +16,4 @@ $(document).ready(function() {
     $(this).attr('size', $(this).val().length)
   });
 });
-
 }
