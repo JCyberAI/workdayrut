@@ -1,4 +1,4 @@
-/*var timer = setInterval(checkTime, 1000)
+var timer = setInterval(checkTime, 1000)
 
 function checkTime(){
     let dateTime = new Date()
@@ -17,4 +17,4 @@ $(document).ready(function() {
   });
 });
 
-}*/
+}
