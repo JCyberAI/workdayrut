@@ -7,7 +7,7 @@ function checkTime(){
     let offSet = 0
     if (hourNow > 17){offSet = 8}
     else if (hourNow < 9) {offSet = -8}
-    hourNow = hourNow - offSet 
+    oldHour = hourNow - offSet 
     if (oldHour < hourNow){
         formatField(hourNow)
 }
