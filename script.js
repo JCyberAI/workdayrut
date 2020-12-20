@@ -58,13 +58,16 @@ function createInput () {
 function createBtn () {
 
   for (i = 9; i < 18; i++) {
-    let button = $(`<button class="col-xs-2">`);
+    let button = $(`<button id="btn${i}" class="col-xs-2">`);
     button.addClass("save")
     button.text("Save")
    $(`.row${i}`).append(button);  
 
   }
 }
+
+//for the event listener, add a class/id scope for the use of this
+
 
 // Local Storage
 // Formatting (past, present, future)
