@@ -1,4 +1,6 @@
+//setInterval is executing the checkTime function every 1 second (1000 milliseconds)
 var timer = setInterval(checkTime, 1000)
+// var timer = setInterval(alert("here i am"), 10000)
 
 function checkTime(){
     let dateTime = new Date()
@@ -9,7 +11,7 @@ function checkTime(){
     else if (hourNow < 9) {offSet = -8}
     oldHour = hourNow - offSet 
     if (oldHour < hourNow){
-        formatField(hourNow)
+       // formatField(hourNow)
 }
 $(document).ready(function() {
   $('#name').keyup(function() {
@@ -17,3 +19,52 @@ $(document).ready(function() {
   });
 });
 }
+
+//Call functions
+createDivs()
+createLabel()
+createInput()
+createBtn()
+
+function createDivs () {
+
+  for (i = 9; i < 18; i++) {
+    let divs = $(`<div class="row${i}"></div>`);
+   $(".container").append(divs);
+
+  }
+}
+
+function createLabel () {
+
+  for (i = 9; i < 18; i++) {
+    let label = $(`<p class="col-xs-2">${i}</p>`);
+    label.addClass("hour")
+   $(`.row${i}`).append(label);
+
+  }  
+}
+
+function createInput () {
+
+  for (i = 9; i < 18; i++) {
+    let input = $(`<input class="col-xs-6">`);
+    input.addClass("row")
+   $(`.row${i}`).append(input);
+
+  }
+}
+
+function createBtn () {
+
+  for (i = 9; i < 18; i++) {
+    let button = $(`<button class="col-xs-2">`);
+    button.addClass("save")
+    button.text("Save")
+   $(`.row${i}`).append(button);  
+
+  }
+}
+
+// Local Storage
+// Formatting (past, present, future)
