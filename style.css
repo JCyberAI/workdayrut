@@ -20,14 +20,16 @@ body {
   height: 400px;
 }
 
-textarea,
+#textarea,
 .textspace {
-  background: transparent;
-  border: none;
-  resize: horizontal;
-  color: #000000;
-  border-left: 1px solid black;
+  background: whitesmoke;
+  resize:both;
+  color: #a01c1c;
+  border: 1px solid black;
   padding: 10px;
+  display: block;
+  margin: 0 auto;
+  
 }
 
 .textspace {
@@ -81,12 +83,10 @@ textarea,
 }
 
 #save {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border: 1px solid black;
   color: white;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 
 #save i:hover {

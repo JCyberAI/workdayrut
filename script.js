@@ -48,7 +48,7 @@ function createLabel () {
 function createInput () {
 
   for (i = 9; i < 18; i++) {
-    let input = $(`<input class="col-xs-6">`);
+    let input = $(`<input id="textarea" class="col-xs-6">`);
     input.addClass("row")
    $(`.row${i}`).append(input);
 
@@ -68,6 +68,12 @@ function createBtn () {
 
 //for the event listener, add a class/id scope for the use of this
 
+function eventList () {
+
+  addEventListener("click", this, document.getElementById(`btn${i}`))
+  
+
+}
 
 // Local Storage
 
